@@ -10,8 +10,8 @@ using crud.Models;
 namespace crud.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20230914124606_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230914205526_Initial")]
+    partial class Initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -26,10 +26,11 @@ namespace crud.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("descricao")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("preco")
-                        .HasColumnType("TEXT");
+                    b.Property<double>("preco")
+                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 

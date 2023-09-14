@@ -19,7 +19,4 @@
   <PropertyGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <PkgMicrosoft_EntityFrameworkCore_Tools Condition=" '$(PkgMicrosoft_EntityFrameworkCore_Tools)' == '' ">/home/paulo/.nuget/packages/microsoft.entityframeworkcore.tools/7.0.11</PkgMicrosoft_EntityFrameworkCore_Tools>
   </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-  <DefineConstants>TRACE;SQLiteVersion</DefineConstants>
-</PropertyGroup>
 </Project>

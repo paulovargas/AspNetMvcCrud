@@ -23,10 +23,11 @@ namespace crud.Migrations
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("descricao")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<decimal>("preco")
-                        .HasColumnType("TEXT");
+                    b.Property<double>("preco")
+                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 

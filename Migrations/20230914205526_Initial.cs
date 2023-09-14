@@ -5,7 +5,7 @@
 namespace crud.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreate : Migration
+    public partial class Initial : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -16,8 +16,8 @@ namespace crud.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    descricao = table.Column<string>(type: "TEXT", nullable: true),
-                    preco = table.Column<decimal>(type: "TEXT", nullable: false)
+                    descricao = table.Column<string>(type: "TEXT", nullable: false),
+                    preco = table.Column<int>(type: "INTEGER", nullable: false)
                 },
                 constraints: table =>
                 {

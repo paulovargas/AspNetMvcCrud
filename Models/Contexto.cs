@@ -9,7 +9,6 @@ namespace crud.Models
     public class Contexto : DbContext
     {
         public DbSet<Produto> Produtos { get; set; } = null!;
-
         public Contexto(DbContextOptions<Contexto> options) : base(options)
         {
 
