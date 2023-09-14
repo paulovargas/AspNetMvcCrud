@@ -14,12 +14,12 @@
             <input type="hidden" asp-for="Id" />
             <div class="form-group">
                 Descrição
-                <input asp-for="descricao" class="form-control" />
+                <input asp-for="descricao" class="form-control" required/>
                 <span asp-validation-for="descricao" class="text-danger"></span>
             </div>
             <div class="form-group mt-3">
                 Preço
-                <input type="number" asp-for="preco" class="form-control" />
+                <input asp-for="preco" class="form-control" required/>
                 <span asp-validation-for="preco" class="text-danger"></span>
             </div>
             <div class="form-group mt-3 mb-3">

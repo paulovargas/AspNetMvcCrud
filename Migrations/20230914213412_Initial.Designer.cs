@@ -10,7 +10,7 @@ using crud.Models;
 namespace crud.Migrations
 {
     [DbContext(typeof(Contexto))]
-    [Migration("20230914205526_Initial")]
+    [Migration("20230914213412_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
@@ -29,8 +29,8 @@ namespace crud.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<double>("preco")
-                        .HasColumnType("REAL");
+                    b.Property<decimal>("preco")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 

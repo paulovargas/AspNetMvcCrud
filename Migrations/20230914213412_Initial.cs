@@ -17,7 +17,7 @@ namespace crud.Migrations
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
                     descricao = table.Column<string>(type: "TEXT", nullable: false),
-                    preco = table.Column<int>(type: "INTEGER", nullable: false)
+                    preco = table.Column<decimal>(type: "REAL", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -26,8 +26,8 @@ namespace crud.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<double>("preco")
-                        .HasColumnType("REAL");
+                    b.Property<decimal>("preco")
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 

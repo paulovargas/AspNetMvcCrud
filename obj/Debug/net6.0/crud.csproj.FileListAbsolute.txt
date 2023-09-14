@@ -108,3 +108,11 @@
 /home/paulo/projetos/DotNet/IBID/crud/obj/Debug/net6.0/crud.pdb
 /home/paulo/projetos/DotNet/IBID/crud/obj/Debug/net6.0/crud.genruntimeconfig.cache
 /home/paulo/projetos/DotNet/IBID/crud/obj/Debug/net6.0/ref/crud.dll
+/home/paulo/projetos/DotNet/IBID/crud/bin/Debug/net6.0/System.Web.Mvc.dll
+/home/paulo/projetos/DotNet/IBID/crud/bin/Debug/net6.0/System.Web.Razor.dll
+/home/paulo/projetos/DotNet/IBID/crud/bin/Debug/net6.0/System.Web.Helpers.dll
+/home/paulo/projetos/DotNet/IBID/crud/bin/Debug/net6.0/System.Web.WebPages.Deployment.dll
+/home/paulo/projetos/DotNet/IBID/crud/bin/Debug/net6.0/System.Web.WebPages.Razor.dll
+/home/paulo/projetos/DotNet/IBID/crud/bin/Debug/net6.0/System.Web.WebPages.dll
+/home/paulo/projetos/DotNet/IBID/crud/bin/Debug/net6.0/Microsoft.Web.Infrastructure.dll
+/home/paulo/projetos/DotNet/IBID/crud/bin/Debug/net6.0/pt-br/System.Web.Mvc.resources.dll
