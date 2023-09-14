@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "LkFgD9mMMcdIkN/ouRUwZidJv0VOi6GJ9Zsuyo3uuPA=",
+  "Hash": "0CC0HSvfXTwE4IvMh31L/gPusJzAPCDQ3yDdu1S0z2o=",
   "Source": "crud",
   "BasePath": "_content/crud",
   "Mode": "Default",
@@ -984,23 +984,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/jquery.validate.min.js"
-    },
-    {
-      "Identity": "/home/paulo/projetos/DotNet/IBID/crud/wwwroot/lib/jquery-validation/dist/methods_pt.js",
-      "SourceId": "crud",
-      "SourceType": "Discovered",
-      "ContentRoot": "/home/paulo/projetos/DotNet/IBID/crud/wwwroot/",
-      "BasePath": "_content/crud",
-      "RelativePath": "lib/jquery-validation/dist/methods_pt.js",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/lib/jquery-validation/dist/methods_pt.js"
     },
     {
       "Identity": "/home/paulo/projetos/DotNet/IBID/crud/wwwroot/lib/jquery-validation/LICENSE.md",

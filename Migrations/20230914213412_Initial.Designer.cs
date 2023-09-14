@@ -30,7 +30,7 @@ namespace crud.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<decimal>("preco")
-                        .HasColumnType("TEXT");
+                        .HasColumnType("REAL");
 
                     b.HasKey("Id");
 
