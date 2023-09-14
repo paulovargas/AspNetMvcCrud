@@ -1,31 +1,63 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using crud.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace crud.Controllers;
 
 public class HomeController : Controller
 {
-    private readonly ILogger<HomeController> _logger;
+   private readonly Contexto _contexto;
 
-    public HomeController(ILogger<HomeController> logger)
-    {
-        _logger = logger;
-    }
+       public HomeController(Contexto contexto)
+       {
+            _contexto = contexto;                
+       }
 
-    public IActionResult Index()
-    {
-        return View();
-    }
+       public async Task<IActionResult> Index()
+       {
+            //return View();        
+            return View(await _contexto.Produtos.ToListAsync());
+       }
 
-    public IActionResult Privacy()
-    {
-        return View();
-    }
+       [HttpGet]
+       public IActionResult NovoProduto()
+       {
+            return View();        
+       }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-    public IActionResult Error()
-    {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-    }
+       [HttpPost]
+       public async Task<IActionResult> NovoProduto(Produto produto)
+       {
+            await _contexto.Produtos.AddAsync(produto);
+            await _contexto.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
+       }
+
+        [HttpGet]
+        public async Task<IActionResult> AtualizarProduto(int Id)
+        {
+            Produto produto = await _contexto.Produtos.FindAsync(Id);
+
+            return View(produto);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> AtualizarProduto(Produto produto)
+        {
+            _contexto.Produtos.Update(produto);
+            await _contexto.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ExcluirProduto(int Id)
+        {
+            Produto produto = await _contexto.Produtos.FindAsync(Id);
+            _contexto.Produtos.Remove(produto);
+            await _contexto.SaveChangesAsync();
+            return RedirectToAction(nameof(Index));
+        }
+
 }

@@ -1,8 +1,50 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<crud.Models.Produto>
+
+@{
+    ViewData["Title"] = "Crud de Produtos";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<h1>Produtos</h1>
+
+<p>
+    <a asp-action="NovoProduto" class="btn btn-success">Cadastrar Produto</a>
+</p>
+<table class="table table-bordered border-primary">
+    <thead class="table-dark">
+        <tr>
+            <th>
+                Código
+            </th>
+            <th>
+                Descrição
+            </th>
+            <th>
+                Preço
+            </th>
+            <th style="text-align: center;">Ações</th>
+        </tr>
+    </thead>
+    <tbody class="mb-3">
+        @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Id)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.descricao)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.preco)
+            </td>
+            <td>
+                <div class="d-flex d-grid gap-3" style="justify-content: center;">
+                    <a asp-action="AtualizarProduto" asp-route-Id="@item.Id" class="btn btn-primary">Atualizar</a>
+                <form asp-action="ExcluirProduto" asp-route-Id="@item.Id">
+                    <button type="submit" class="btn btn-danger">Excluir</button>
+                </form>               
+                </div>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
