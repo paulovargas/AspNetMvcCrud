@@ -55,7 +55,7 @@ public class HomeController : Controller
         public async Task<IActionResult> ExcluirProduto(int Id)
         {
             Produto produto = await _contexto.Produtos.FindAsync(Id);
-            _contexto.Produtos.Remove(produto);
+            _contexto.Produtos.Remove(produto!);
             await _contexto.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

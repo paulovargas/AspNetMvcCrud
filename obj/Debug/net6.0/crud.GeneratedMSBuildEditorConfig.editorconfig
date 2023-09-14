@@ -15,8 +15,16 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /home/paulo/projetos/DotNet/IBID/crud
 build_property._RazorSourceGeneratorDebug = 
 
+[/home/paulo/projetos/DotNet/IBID/crud/Views/Home/AtualizarProduto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9BdHVhbGl6YXJQcm9kdXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/home/paulo/projetos/DotNet/IBID/crud/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9JbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/home/paulo/projetos/DotNet/IBID/crud/Views/Home/NovoProduto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Ob3ZvUHJvZHV0by5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/home/paulo/projetos/DotNet/IBID/crud/Views/Home/Privacy.cshtml]
