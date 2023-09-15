@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Dhjbl8lv9dkmsYJsOcKmNRgxnXogWva7NyqrJRXsuziNH7Zs9o0O5cQPtVTg4fLSireGHY9lVmvMhuFqbTlhxQ==",
+  "dgSpecHash": "GyFk3yRCpwlMsNMaNBk3xQeDvpJhkSrYXbDPcRATHw7jXCTjOkwPwqoGlkTBs8zUzZtVj/vYV4raikkVZdVMtw==",
   "success": true,
   "projectFilePath": "/home/paulo/projetos/DotNet/IBID/crud/crud.csproj",
   "expectedPackageFiles": [
